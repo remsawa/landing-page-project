@@ -5,16 +5,32 @@ body {
   margin: 0px;
 }
 
-.header {
-  display: flex;
-  background-color: #1f2937;
-  font-size: 30px;
-  height: 55px;
-  color: white;
-  padding: 15px;
-  padding-left: 100px;
-  padding-right: 100px;
-  gap: 200px;
+@media all and (max-width: 1400px) {
+  .header {
+    display: flex;
+    background-color: #1f2937;
+    font-size: 30px;
+    height: 55px;
+    color: white;
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 200px;
+  }
+}
+
+@media all and (min-width: 1401px) {
+  .header {
+    display: flex;
+    background-color: #1f2937;
+    font-size: 30px;
+    height: 55px;
+    color: white;
+    padding: 15px;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 200px;
+  }
 }
 
 .logo {
@@ -30,53 +46,73 @@ body {
   margin-left: auto;
   align-items: center ;
 }
-.one,
-.two,
-.three,
-.four {
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  padding-right: 100px;
- 
+@media all and (max-width: 1400px) {
+  .one,
+  .two,
+  .three,
+  .four {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media all and (min-width: 1401px) {
+  .one,
+  .two,
+  .three,
+  .four {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 .one {
   display: flex;
-  flex-flow: row wrap;
-  height: 500px;
+  flex-direction: row;
   background-color: #1f2937;
   color: white;
-  gap: 10px;
+  gap: 20px;
   padding-top: 20px;
-}
+  padding-bottom: 20px;
+  flex: 1;
+  align-items: center;
+  }
+
+.one {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f2937;
+  color: white;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 1;
+  align-items: center;
+  }
 
 .left-side {
-  justify-items: start;
-  flex: 1;
+  flex: 2;
 }
 
 .right-side {
-  justify-items: end;
   margin-left: auto;
   flex: 1;
 }
 
 .one p {
-  width: 400px;
-  margin-right: 40px;
+  width: 350px;
 }
 
 .one h1 {
   max-width: 70%;
 }
 
-.one img {
-}
-
 .two {
   display: flex;
   height: 300px;
-
 }
 
 .three {
@@ -129,4 +165,15 @@ body {
 
 a {
   text-decoration: none;
+}
+
+button {
+  width: 80px;
+  height: 28px;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  align-items: center;
 }
