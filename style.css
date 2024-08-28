@@ -1,27 +1,25 @@
-
-
 body {
   display: flex;
   flex-direction: column;
   font-family: Roboto, sans-serif;
-  width: fit-content;
-
+  margin: 0px;
 }
 
 .header {
   display: flex;
   background-color: #1f2937;
   font-size: 30px;
-  height: 40px;
+  height: 55px;
   color: white;
   padding: 15px;
   padding-left: 100px;
   padding-right: 100px;
-  gap: 300px;
+  gap: 200px;
 }
 
 .logo {
   display: flex;
+  align-items: center;
 }
 
 .links {
@@ -29,6 +27,8 @@ body {
   font-weight: 100;
   font-size: 16px;
   justify-content: end;
+  margin-left: auto;
+  align-items: center ;
 }
 .one,
 .two,
@@ -41,9 +41,36 @@ body {
  
 }
 .one {
+  display: flex;
+  flex-flow: row wrap;
   height: 500px;
   background-color: #1f2937;
   color: white;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.left-side {
+  justify-items: start;
+  flex: 1;
+}
+
+.right-side {
+  justify-items: end;
+  margin-left: auto;
+  flex: 1;
+}
+
+.one p {
+  width: 400px;
+  margin-right: 40px;
+}
+
+.one h1 {
+  max-width: 70%;
+}
+
+.one img {
 }
 
 .two {
@@ -51,8 +78,7 @@ body {
   height: 300px;
 
 }
-img {
-}
+
 .three {
   height: 200px;
 }
