@@ -79,19 +79,7 @@ body {
   padding-bottom: 20px;
   flex: 1;
   align-items: center;
-  }
-
-.one {
-  display: flex;
-  flex-direction: row;
-  background-color: #1f2937;
-  color: white;
-  gap: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  flex: 1;
-  align-items: center;
-  }
+}
 
 .left-side {
   flex: 2;
@@ -112,7 +100,26 @@ body {
 
 .two {
   display: flex;
-  height: 300px;
+  height: 200px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.box-main {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border: 4px solid #3882f6;
+  border-radius: 15px;
 }
 
 .three {
@@ -123,20 +130,6 @@ body {
   height: 500px;
 }
 
-.box-main {
-  display: flex;
-  height: 500px;
-  width: 500px;
-  gap: 20px;
-}
-
-.box {
-  display: flex;
-  height: 200px;
-  width: 150px;
-  background-color: white;
-  border: 4px solid #3882f6;
-}
 
 .big-quote {
   background-color: #e5e7eb;
